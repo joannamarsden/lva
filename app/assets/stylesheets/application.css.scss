@@ -10,13 +10,15 @@
  *
  *= require refinery/formatting
  *= require refinery/theme
+ *= require font-awesome
  *= require_self
  *= require foundation_and_overrides
 
  *= require_tree .
  */
+$topbar-arrows: false;
+@import "foundation";
 
-/* RefineryCMS Customization */
 header {
 }
 #page {
@@ -32,7 +34,39 @@ header {
   }
 }
 footer {
+	text-align: center;
 }
+
+.footer-menu ul {
+	text-align: center;
+}
+
+.footer-menu li {
+	display: inline;
+	padding: .2em 1em;
+}
+
+.footer-menu p {
+	text-align: center;
+}
+
 .top-bar {
   .title-area { z-index: 2; }
+}
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.footer, .push {
+	height: 4em;
+	clear: both;
 }
