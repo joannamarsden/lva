@@ -27,7 +27,8 @@ html, body {
 	clear: both;
 }
 
-header {
+#page_container {
+  background-color: image-url("paper.png") repeat 0 0 !important;
 }
 #page {
   @include grid-row();
