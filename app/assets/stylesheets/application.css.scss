@@ -43,15 +43,19 @@ html, body {
 }
 footer {
 	text-align: center;
+	background: #ffffff;
+	padding-top: 2%;
 }
 
 .footer-menu ul {
 	text-align: center;
+	background: #ffffff;
 }
 
 .footer-menu li {
 	display: inline;
 	padding: .2em 1em;
+	background: #ffffff;
 }
 
 .footer-menu p {
@@ -60,10 +64,6 @@ footer {
 
 .top-bar {
   .title-area { z-index: 2; }
-}
-
-#page_container {
-  
 }
 
 #body_content_title {
