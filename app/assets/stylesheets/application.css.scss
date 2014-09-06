@@ -7,7 +7,7 @@
  *= require_tree .
  */
 
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -29,9 +29,6 @@ html, body {
 	clear: both;
 }
 
-#page_container {
-  background-color: image-url("paper.png") repeat 0 0 !important;
-}
 #page {
   @include grid-row();
   #body {
@@ -63,5 +60,13 @@ footer {
 
 .top-bar {
   .title-area { z-index: 2; }
+}
+
+#page_container {
+  background-color: image-url("paper.png") repeat 0 0 !important;
+}
+
+#body_content_title {
+  padding-left:0.9375rem !important;
 }
 
