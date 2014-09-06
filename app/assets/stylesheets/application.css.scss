@@ -1,23 +1,31 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
+@import "foundation_and_overrides";
+ /*
  *= require refinery/formatting
  *= require refinery/theme
- *= require font-awesome
+ *= require foundation
  *= require_self
- *= require foundation_and_overrides
-
  *= require_tree .
  */
-$topbar-arrows: false;
-@import "foundation";
+
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.footer, .push {
+	height: 4em;
+	clear: both;
+}
 
 header {
 }
@@ -54,19 +62,3 @@ footer {
   .title-area { z-index: 2; }
 }
 
-* {
-	margin: 0;
-}
-html, body {
-	height: 100%;
-}
-.wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -4em;
-}
-.footer, .push {
-	height: 4em;
-	clear: both;
-}
