@@ -3,7 +3,7 @@
 <ul>
 	<li><a href="https://www.facebook.com/ossiancircle" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
 	<li><a href="https://twitter.com/ossiancircle" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-	<li><i class="fa fa-envelope-o fa-2x"></i></li>
+	<li><a href="#" alt="Liste d'envoi / Mailing List" data-reveal-id="myModal"><i class="fa fa-envelope-o fa-2x"></i></a></li>
 </ul>
 <%= footer_menu.to_html %>
 <small>
@@ -11,3 +11,23 @@
                       :site_name => Refinery::Core.site_name) %>
 </small>
 </div>
+
+
+<div id="myModal" class="reveal-modal" data-reveal>
+<!-- Begin MailChimp Signup Form -->
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//ossiancircle.us9.list-manage.com/subscribe/post?u=862f014ae1a74f36885f7e008&amp;id=78731c7b0e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<h3 for="mce-EMAIL">Liste d'envoi / Mailing List</h3>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="courriel / email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_862f014ae1a74f36885f7e008_78731c7b0e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Abonnez vous / Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button radius small"></div>
+</form>
+</div>
+</div>
+<!--End mc_embed_signup-->
